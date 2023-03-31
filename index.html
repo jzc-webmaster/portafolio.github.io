@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Portafolio</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Sección de inicio -->
+    <section id="inicio" class="parallax-container">
+        <div class="parallax">
+            <!-- Agregar imagen de fondo aquí -->
+            <img src="src/img/feather.jpg" alt="Fondo">
+        </div>
+        <div class="section-content">
+            <h1>Hola, soy Julián Zetina</h1>
+            <h3>Webmaster</h3>
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section id="sobre-mi">
+        <div class="parallax-container zooming-banner">
+            <div class="parallax">
+                <!-- Agregar imagen del banner aquí -->
+                <img src="src/img/moon.jpg" alt="Banner">
+            </div>
+        </div>
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <!-- Agregar información sobre ti aquí -->
+            <p>
+                <strong>Webmaster</strong> con <strong>4 años de experiencia</strong>, especializado en liderar y potenciar empresas de comercio electrónico. Destaco por identificar oportunidades, optimizar procesos y maximizar rentabilidad, siempre de manera flexible y confiable.
+            </p>
+            
+    
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <!-- Agregar tus proyectos aquí -->
+        </div>
+    </section>
+
+<!-- Sección de contacto -->
+<section id="contacto">
+    <div class="container">
+        <h2>Contacto</h2>
+        <form id="contact-form" action="https://formspree.io/f/xjvdawqw" method="POST">
+            <div class="input-field">
+                <input id="email" type="email" name="email" required>
+                <label for="email">Correo</label>
+            </div>
+            <div class="input-field">
+                <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+                <label for="message">Mensaje</label>
+            </div>
+            <button type="submit" class="btn waves-effect waves-light">Enviar</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
