@@ -1,0 +1,154 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+/* Navegación */
+nav {
+  background-color: #3f51b5;
+}
+
+nav .brand-logo {
+  font-weight: 500;
+}
+
+nav a {
+  color: #ffffff;
+}
+
+/* Sección de inicio */
+#inicio {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+#inicio .parallax-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#inicio .parallax img {
+  filter: brightness(50%);
+}
+
+.section-content {
+  text-align: center;
+}
+
+/* Secciones */
+section {
+  padding: 0;
+}
+
+.container h2 {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+/* Estilos para el menú de hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger span:nth-child(3) {
+  bottom: 0;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(50%) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 992px) {
+  nav .right.hide-on-med-and-down {
+      display: none;
+  }
+}
+/* Estilos para la versión móvil */
+@media screen and (max-width: 992px) {
+  .hamburger {
+    display: block;
+  }
+  
+  #nav-mobile {
+    display: none;
+  }
+  
+  #nav-mobile-mobile {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  #nav-mobile-mobile.active {
+    left: 0;
+    opacity: 1;
+  }
+  
+  #nav-mobile-mobile ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  #nav-mobile-mobile li {
+    margin: 10px 0;
+  }
+  
+  #nav-mobile-mobile a {
+    color: #fff;
+    font-size: 24px;
+  }
+}
