@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 // Agregar efecto de zoom y desplazamiento para la sección "Sobre mí"
-                if (container.classList.contains('zooming-banner')) {
+                if (container.id === 'sobre-mi' || container.id === 'proyectos') {
+
                     var scale = 1 + scrollProgress * 2;
                     var opacity = 1 - scrollProgress * 2;
                     var contentTranslateY = -scrollProgress * containerHeight;
