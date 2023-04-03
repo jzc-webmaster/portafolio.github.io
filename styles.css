@@ -10,10 +10,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navegación */
 nav {
-  background-color: rgba(255, 255, 255, 0.1); /* Cambia el color de fondo a blanco semi-transparente */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
-  backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque en el área detrás del header */
-  -webkit-backdrop-filter: blur(10px); /* Asegúrate de agregar el prefijo -webkit- para soporte en Safari */
+  background-color: #2c3e50; /* Cambia el color de fondo a un tono oscuro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
 }
 
 nav .brand-logo {
@@ -23,6 +21,11 @@ nav .brand-logo {
 
 nav a {
   color: #ffffff; /* Cambia el color del texto de los enlaces a blanco */
+  transition: color 0.3s; /* Agrega una transición suave al cambiar el color */
+}
+
+nav a:hover {
+  color: #3498db; /* Cambia el color del texto de los enlaces al pasar el mouse */
 }
 
 
